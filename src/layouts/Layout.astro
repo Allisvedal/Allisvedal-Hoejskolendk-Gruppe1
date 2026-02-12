@@ -1,0 +1,33 @@
+---
+import "../css/main.css";
+import Button from "../components/Button.astro";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+<header>Her er min header</header>
+<nav>
+	<a href="/">forside</a>
+	<a href="products">produkter</a>
+	<a href="aboutus">om os</a>
+	<a href="contact">kontakt</a>
+<Button title="Bestil ophold" variant="primary"/>
+<Button title="Se rejsekalender" variant="secondary"/>
+<Button title="Kontakt os" variant="button"/>
+
+</nav>
+ <slot />
+       
+		<footer>Her er min footer</footer>
+
+       
+	</body>
+</html>
