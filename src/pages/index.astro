@@ -9,20 +9,164 @@ import Cards from "../components/cards.astro";
 	<p>HØJSKOLENDK er en dansk højskole for unge i alderen 18-26 år.Vi brænder for oplevelser, fællesskabet og det gode eventyr.</p>
 	<Button />
 	<Button />
+
 <section class="container">
 		<!-- <img src="" alt=""> -->
 		<h1>Vælg dit eventyr</h1>
 		<p> HØJSKOLENDK er en dansk højskole for unge i alderen 18-28 år.Vi brænder for oplevelser, fællesskabet og det gode eventyr.</p>
 	</section>
 
+	<!-- Vælg dit eventyr -->
 	<section class="cards">
-		<!-- Vælg dit eventyr -->
+		<div class="card card-1" style="background-image: url('/eventyr.jpg');">
+			<div class="badge">90 dage</div>
+			<div class="content">
+				<h3>Maldivene, Sri lanka, Bali, Gili Island, Japan, Australien</h3>
+				<span class="sub-text">Se afgange</span>
+			</div>
+		</div>
+
+		<div class="card card-2">
+			<div class="badge">90 dage</div>
+			<div class="content">
+				<span class="status-blue">2 drengepladser tilbage</span>
+				<h3>Australien, New Zealand, Vietnam, Bali, Gili Island, Lombok</h3>
+			</div>
+		</div>
+
+		<div class="card card-3">
+			<div class="badge">90 dage</div>
+			<div class="content">
+				<h3>Australien, New Zealand, Vietnam, Bali, Gili Island, Lombok</h3>
+			</div>
+		</div>
+
+		<div class="card card-4">
+			<div class="badge">90 dage</div>
+			<div class="content">
+				<span class="status-blue">4 pladser tilbage</span>
+				<h3>Hawaii, Australien, Japan, Bali, Gili Island</h3>
+			</div>
+		</div>
+
+		<div class="card card-5">
+			<div class="badge">90 dage</div>
+			<div class="content">
+				<h3>Maldivene, Sri Lanka, Bali, Gili Island</h3>
+			</div>
+		</div>
     </section> 
+
 
 	<div class="cta-wrap">
       <button class="cta">Se alle rejser</button>
     </div>
 
+<style>
+	main{
+		background-color: white;
+		min-height: 100vh;
+	}
+/*Generell styling*/
+.container{
+	text-align: center;
+	max-width: 600px;
+	margin: 40px auto;
+	font-family: sans-serif;
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-weight: 900;
+	margin-bottom: 10px;
+}
+
+/* gridoppsett for kortene*/
+.cards{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 20px;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 20px;
+	font-family: sans-serif;
+}
+
+/*selve kortet*/
+.card{
+	background: linear-gradient(to bottom, #f0f0f0, #888);
+	border-radius: 12px;
+	aspect-ratio: 1/1;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: white;
+	position: relative;
+}
+
+.card-1{
+	background-image: linear-gradient(to bottom, rbga(0,0,0,0,1));
+}
+
+
+.card-1, .card-2, .card-3{
+	grid-column: span 2;
+}
+
+.card-4, .card-5{
+	grid-column: span 3;
+}
+
+
+.badge{
+	background-color: #d35400;
+	padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.status-blue {
+        background-color: #4da6ff;
+        padding: 3px 8px;
+        border-radius: 3px;
+        font-size: 0.7rem;
+        display: block;
+        margin-bottom: 8px;
+        width: fit-content;
+    }
+
+    h3 {
+        margin: 0;
+        font-size: 1.1rem;
+        line-height: 1.3;
+    }
+
+    .sub-text {
+        font-size: 0.8rem;
+        text-decoration: underline;
+        display: block;
+        margin-top: 5px;
+    }
+
+    /* Knapp nederst */
+    .cta-wrap {
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .cta {
+        background-color: #d35400;
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+</style>
 
 	<section>
 		<!-- <img src="" alt=""> -->
