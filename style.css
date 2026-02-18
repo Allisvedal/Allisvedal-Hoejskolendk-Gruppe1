@@ -1,0 +1,127 @@
+/* Grundlæggende styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: #333;
+}
+
+/* 1. Header & Top-bar */
+.top-bar {
+  background-color: #e3b38c;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 2rem;
+  transform: rotate(-5deg); /* Gør logoet skråt */
+  display: inline-block;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: #d37332;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* 2. Checkbox Grid (3 kolonner) */
+.checkbox-grid,
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Laver de 3 kolonner */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+  padding: 0 20px;
+}
+
+.check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.check-item input {
+  margin-top: 4px;
+}
+
+/* Overskrifter i center */
+h1,
+h2,
+.category-title {
+  text-align: center;
+}
+
+.category-title {
+  background-color: #e3b38c;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 10px 40px;
+  border-radius: 10px;
+}
+
+/* 3. Den store formular boks */
+.contact-info {
+  background-color: #e3b38c;
+  padding: 50px 20px;
+  border-radius: 20px;
+  max-width: 700px;
+  margin: 50px auto;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-container label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-container input,
+.form-container select {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  background-color: #d37332;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
