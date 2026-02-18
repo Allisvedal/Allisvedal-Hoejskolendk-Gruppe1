@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>HøjskolenDK</title>
   </head>
   <body>
@@ -32,6 +38,13 @@
         <h1>Tilmelding til infomøde</h1>
         <div class="image-grid"></div>
       </section>
+
+      <div class="image-grid">
+        <img src="img/billede1.webp" alt="Højskole elever ved Taj Mahal" />
+        <img src="img/billede2.webp" alt="Højskole elever der dykker" />
+        <img src="img/billede3.webp" alt="Højskole elever på et bjerg" />
+        <img src="img/billede4.webp" alt="Højskole elever foran pyramide" />
+      </div>
 
       <form>
         <section class="selection">
@@ -84,7 +97,7 @@
         </section>
 
         <section class="selection">
-          <h2>Sommer højskole</h2>
+          <h2 class="category-title">Sommer højskole</h2>
           <div class="checkbox-group">
             <label class="check-item">
               <input type="checkbox" /> Bali, Lombok & Gili
@@ -131,6 +144,7 @@
 
             <label for="tlf">Telefonnummer</label>
             <input required type="tel" id="tlf" placeholder="+45" />
+
             <button class="submit-btn">Tilmeld</button>
           </div>
         </section>
